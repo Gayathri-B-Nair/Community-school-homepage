@@ -1,0 +1,635 @@
+/* ==================================================
+   ST HUXLEY'S COMMUNITY COLLEGE
+   PREMIUM MAGAZINE CSS - PART 1
+================================================== */
+
+/* ---------- GOOGLE FONTS ---------- */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700;800&family=Source+Sans+3:wght@300;400;500;600;700&display=swap');
+
+/* ---------- RESET ---------- */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:'Source Sans 3',sans-serif;
+    color:#444;
+    background:#f7f4ef;
+    overflow-x:hidden;
+    line-height:1.8;
+}
+
+/* ---------- GLOBAL ---------- */
+
+img{
+    max-width:100%;
+    display:block;
+}
+
+section{
+    padding:90px 8%;
+}
+
+.section-heading{
+    margin-bottom:45px;
+    text-align:center;
+}
+
+.section-heading.left{
+    text-align:left;
+}
+
+.section-heading span{
+    display:block;
+    color:#9b6c4f;
+    font-size:0.9rem;
+    letter-spacing:4px;
+    font-weight:700;
+    margin-bottom:12px;
+}
+
+.section-heading h2{
+    font-family:'Playfair Display',serif;
+    font-size:3.2rem;
+    color:#2d2d2d;
+}
+
+.primary-btn,
+.secondary-btn{
+    display:inline-block;
+    padding:15px 34px;
+    border-radius:50px;
+    text-decoration:none;
+    font-weight:600;
+    transition:0.3s ease;
+}
+
+.primary-btn{
+    background:#9b6c4f;
+    color:#fff;
+}
+
+.primary-btn:hover{
+    background:#7d5238;
+    transform:translateY(-4px);
+}
+
+.secondary-btn{
+    border:2px solid #fff;
+    color:#fff;
+}
+
+.secondary-btn:hover{
+    background:#fff;
+    color:#333;
+}
+
+/* ---------- HERO HEADER ---------- */
+
+.hero-header{
+    min-height:100vh;
+
+    background:
+    linear-gradient(
+        rgba(28,28,28,0.55),
+        rgba(28,28,28,0.55)
+    ),
+    url("https://images.unsplash.com/photo-1523240795612-9a054b0db644?w=1600");
+
+    background-size:cover;
+    background-position:center;
+    background-attachment:fixed;
+
+    color:#fff;
+
+    display:flex;
+    align-items:center;
+}
+
+.hero-overlay{
+    width:100%;
+    padding:40px 8%;
+}
+
+.top-bar{
+    display:flex;
+    justify-content:space-between;
+    flex-wrap:wrap;
+
+    margin-bottom:80px;
+
+    font-size:0.95rem;
+    letter-spacing:2px;
+}
+
+.hero-content{
+    max-width:850px;
+}
+
+.hero-tag{
+    color:#e8c8ae;
+    letter-spacing:5px;
+    font-weight:600;
+    margin-bottom:20px;
+}
+
+.hero-content h1{
+    font-family:'Playfair Display',serif;
+    font-size:5.5rem;
+    line-height:1.15;
+    margin-bottom:25px;
+}
+
+.hero-description{
+    font-size:1.2rem;
+    color:#f0f0f0;
+    max-width:700px;
+    margin-bottom:40px;
+}
+
+.hero-buttons{
+    display:flex;
+    gap:18px;
+    flex-wrap:wrap;
+}
+
+/* ---------- NAVIGATION ---------- */
+
+.main-nav{
+    background:#ffffff;
+    box-shadow:0 10px 25px rgba(0,0,0,0.08);
+
+    position:sticky;
+    top:0;
+    z-index:1000;
+}
+
+.main-nav ul{
+    list-style:none;
+
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+
+    gap:35px;
+
+    padding:22px 20px;
+}
+
+.main-nav a{
+    text-decoration:none;
+    color:#555;
+    font-weight:600;
+
+    transition:0.3s;
+}
+
+.main-nav a:hover{
+    color:#9b6c4f;
+}
+
+/* ---------- INTRO SECTION ---------- */
+
+.intro-section{
+    background:#fdfaf6;
+}
+
+.intro-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:60px;
+    align-items:center;
+}
+
+.intro-image img{
+    border-radius:30px;
+
+    height:550px;
+    width:100%;
+
+    object-fit:cover;
+
+    box-shadow:0 20px 40px rgba(0,0,0,0.12);
+}
+
+.intro-content{
+    background:#fff;
+
+    padding:50px;
+
+    border-radius:30px;
+
+    box-shadow:0 15px 35px rgba(0,0,0,0.08);
+}
+
+.drop-cap::first-letter{
+    font-family:'Playfair Display',serif;
+
+    font-size:5rem;
+
+    float:left;
+
+    line-height:0.9;
+
+    padding-right:12px;
+
+    color:#9b6c4f;
+}
+
+.intro-content p{
+    margin-bottom:22px;
+}
+
+.highlight-quote{
+    margin-top:30px;
+
+    padding:30px;
+
+    background:#f6ede5;
+
+    border-left:5px solid #9b6c4f;
+
+    border-radius:20px;
+
+    font-family:'Playfair Display',serif;
+
+    font-size:1.5rem;
+
+    color:#5a4638;
+}
+
+/* ---------- STORY SECTION ---------- */
+
+.story-section{
+    background:#ffffff;
+}
+
+.story-layout{
+    display:grid;
+    grid-template-columns:2fr 1fr;
+    gap:40px;
+}
+
+.main-story{
+    background:#faf7f2;
+
+    padding:50px;
+
+    border-radius:30px;
+
+    box-shadow:0 12px 30px rgba(0,0,0,0.08);
+}
+
+.main-story p{
+    margin-bottom:22px;
+}
+
+.main-story h3{
+    font-family:'Playfair Display',serif;
+
+    color:#2d2d2d;
+
+    font-size:2rem;
+
+    margin:35px 0 25px;
+}
+
+.styled-list{
+    list-style:none;
+}
+
+.styled-list li{
+    position:relative;
+
+    padding-left:35px;
+
+    margin-bottom:18px;
+}
+
+.styled-list li::before{
+    content:"✦";
+
+    position:absolute;
+    left:0;
+
+    color:#9b6c4f;
+
+    font-size:1.2rem;
+}
+
+/* ---------- QUOTE CARD ---------- */
+
+.quote-card{
+    background:linear-gradient(
+        135deg,
+        #9b6c4f,
+        #b58566
+    );
+
+    color:#fff;
+
+    border-radius:30px;
+
+    padding:50px 40px;
+
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+
+    text-align:center;
+
+    box-shadow:0 18px 35px rgba(0,0,0,0.12);
+}
+
+.quote-card i{
+    font-size:3rem;
+
+    margin-bottom:25px;
+}
+
+.quote-card h4{
+    font-family:'Playfair Display',serif;
+
+    font-size:2rem;
+
+    margin-bottom:20px;
+}
+
+.quote-card p{
+    color:#f7f2ee;
+}
+/* ==================================================
+   PREMIUM MAGAZINE CSS - PART 2 (FINAL)
+================================================== */
+
+/* ---------- COURSES + ADMISSION ---------- */
+
+.courses-admission{
+    display:grid;
+    grid-template-columns:2fr 1fr;
+    gap:50px;
+    align-items:start;
+}
+
+.courses-card,
+.admission-card{
+    background:#fff;
+    padding:50px;
+    border-radius:30px;
+    box-shadow:0 18px 40px rgba(0,0,0,0.08);
+}
+
+/* Section intro */
+.section-intro{
+    margin-bottom:30px;
+    color:#666;
+}
+
+/* ---------- COURSES GRID ---------- */
+
+.courses-grid{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:25px;
+}
+
+.course-item{
+    background:#faf7f2;
+    padding:25px;
+    border-radius:20px;
+    transition:0.3s ease;
+    border:1px solid transparent;
+}
+
+.course-item:hover{
+    transform:translateY(-6px);
+    border-color:#9b6c4f;
+    box-shadow:0 12px 25px rgba(0,0,0,0.08);
+}
+
+.course-item i{
+    font-size:1.8rem;
+    color:#9b6c4f;
+    margin-bottom:10px;
+}
+
+.course-item h3{
+    font-family:'Playfair Display',serif;
+    margin-bottom:10px;
+}
+
+/* ---------- ADMISSION STEPS ---------- */
+
+.steps{
+    display:flex;
+    flex-direction:column;
+    gap:25px;
+}
+
+.step{
+    display:flex;
+    gap:15px;
+    align-items:flex-start;
+}
+
+.step-number{
+    font-size:1.2rem;
+    font-weight:700;
+    color:#9b6c4f;
+}
+
+/* ---------- STATISTICS ---------- */
+
+.stats-section{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:25px;
+
+    margin-top:20px;
+}
+
+.stat-card{
+    background:#fff;
+    text-align:center;
+    padding:40px;
+    border-radius:25px;
+    box-shadow:0 15px 35px rgba(0,0,0,0.08);
+    transition:0.3s ease;
+}
+
+.stat-card:hover{
+    transform:translateY(-8px);
+}
+
+.stat-card h2{
+    font-family:'Playfair Display',serif;
+    font-size:3rem;
+    color:#9b6c4f;
+}
+
+/* ---------- CALL TO ACTION ---------- */
+
+.cta-section{
+    margin-top:60px;
+
+    background:
+    linear-gradient(
+        rgba(20,20,20,0.65),
+        rgba(20,20,20,0.65)
+    ),
+    url("https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=1600");
+
+    background-size:cover;
+    background-position:center;
+    background-attachment:fixed;
+
+    color:#fff;
+
+    text-align:center;
+
+    padding:120px 8%;
+    border-radius:40px;
+}
+
+.cta-content{
+    max-width:800px;
+    margin:auto;
+}
+
+.cta-content h2{
+    font-family:'Playfair Display',serif;
+    font-size:3.5rem;
+    margin:20px 0;
+}
+
+.cta-content p{
+    color:#f0f0f0;
+    margin-bottom:35px;
+}
+
+.cta-buttons{
+    display:flex;
+    justify-content:center;
+    gap:15px;
+    flex-wrap:wrap;
+}
+
+/* ---------- FOOTER ---------- */
+
+.magazine-footer{
+    background:#1f1f1f;
+    color:#e5e5e5;
+    margin-top:80px;
+    padding:60px 20px;
+    text-align:center;
+    border-radius:40px 40px 0 0;
+}
+
+.magazine-footer h3{
+    font-family:'Playfair Display',serif;
+    font-size:2.5rem;
+    margin-bottom:15px;
+    color:#e8c8ae;
+}
+
+.footer-links{
+    display:flex;
+    justify-content:center;
+    gap:25px;
+    margin:25px 0;
+    flex-wrap:wrap;
+}
+
+.footer-links a{
+    color:#ccc;
+    text-decoration:none;
+    transition:0.3s;
+}
+
+.footer-links a:hover{
+    color:#e8c8ae;
+}
+
+/* Social icons */
+.social-icons{
+    display:flex;
+    justify-content:center;
+    gap:15px;
+    margin:20px 0;
+}
+
+.social-icons a{
+    width:45px;
+    height:45px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    border-radius:50%;
+    background:#2c2c2c;
+
+    color:#fff;
+    transition:0.3s ease;
+}
+
+.social-icons a:hover{
+    background:#9b6c4f;
+    transform:translateY(-5px);
+}
+
+.copyright{
+    margin-top:20px;
+    font-size:0.9rem;
+    color:#999;
+}
+
+/* ---------- RESPONSIVE DESIGN ---------- */
+
+@media(max-width:1100px){
+
+    .intro-grid,
+    .courses-admission{
+        grid-template-columns:1fr;
+    }
+
+    .stats-section{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    .courses-grid{
+        grid-template-columns:1fr;
+    }
+}
+
+@media(max-width:700px){
+
+    .hero-content h1{
+        font-size:3.2rem;
+    }
+
+    .cta-content h2{
+        font-size:2.5rem;
+    }
+
+    .stats-section{
+        grid-template-columns:1fr;
+    }
+
+    .main-nav ul{
+        gap:18px;
+    }
+
+    .intro-content,
+    .main-story,
+    .courses-card,
+    .admission-card{
+        padding:25px;
+    }
+}
